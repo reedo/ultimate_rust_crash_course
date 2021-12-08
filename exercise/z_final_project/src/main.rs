@@ -25,7 +25,6 @@
 //
 //     let positive_number: u32 = some_string.parse().expect("Failed to parse a number");
 
-
 fn main() {
     // 1. First, you need to implement some basic command-line argument handling
     // so you can make your program do different things.  Here's a little bit
@@ -49,7 +48,7 @@ fn main() {
             // **OPTION**
             // Improve the blur implementation -- see the blur() function below
             blur(infile, outfile);
-        },
+        }
 
         // **OPTION**
         // Brighten -- see the brighten() function below
@@ -81,7 +80,7 @@ fn main() {
         // For everything else...
         _ => {
             print_usage_and_exit();
-        },
+        }
     }
 }
 
@@ -142,7 +141,6 @@ fn rotate(infile: String, outfile: String) {
     // See blur() for an example of how to save the image.
 }
 
-
 fn invert(infile: String, outfile: String) {
     // See blur() for an example of how to open an image.
 
@@ -155,8 +153,7 @@ fn invert(infile: String, outfile: String) {
 fn grayscale(infile: String, outfile: String) {
     // See blur() for an example of how to open an image.
 
-    // .grayscale() takes no arguments and converts the image in-place, so
-    // you will use the same image to save out to a different file.
+    // .grayscale() takes no arguments. It returns a new image.
 
     // See blur() for an example of how to save the image.
 }
