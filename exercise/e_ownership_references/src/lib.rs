@@ -17,7 +17,9 @@ pub fn inspect(word: &String) {
 ///
 /// * `word` - A string which is a single English word
 pub fn change(word: &mut String) {
-    word.push_str("s")
+    if !word.ends_with("s") {
+        word.push_str("s")
+    }
 }
 
 /// Consumes the given word
