@@ -31,6 +31,12 @@ pub fn eat(word: String) -> bool {
     word.starts_with("b") && word.contains("a")
 }
 
+/// Adds two numbers together and returns the result
+///
+/// # Arguments
+///
+/// * `a` - The first number
+/// * `b` - The second number
 pub fn add(a: &i32, b: &i32) -> i32 {
     a + b
 }
