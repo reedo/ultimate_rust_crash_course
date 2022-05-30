@@ -50,7 +50,7 @@ fn main() {
         //      - Greater than 5.0 -- `Shot::Miss`
         shots.push(match coord.distance_from_center() {
             x if x < 1.0 => Shot::Bullseye,
-            x if x >= 1.0 && x <= 5.0 => Shot::Hit(x),
+            x if x <= 5.0 => Shot::Hit(x),
             _ => Shot::Miss,
         });
     }
